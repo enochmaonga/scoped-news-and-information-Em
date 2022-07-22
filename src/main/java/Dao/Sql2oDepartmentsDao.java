@@ -25,17 +25,17 @@ public class Sql2oDepartmentsDao implements DepartmentsDao {
 
     @Override
     public void add(Departments department) {
-        try(Connection con=sql2o.open()) {
-            String sql="INSERT INTO departments (name,description,size) VALUES (:name,:description,:size)";
-            int id=(int) con.createQuery(sql,true)
+        try (Connection con = sql2o.open()) {
+            String sql = "INSERT INTO departments (name,description,size) VALUES (:name,:description,:size)";
+            int id = (int) con.createQuery(sql, true)
                     .bind(department)
                     .executeUpdate()
                     .getKey();
             department.setId(id);
 
 
-        }catch (Sql2oException e){
+        } catch (Sql2oException e) {
             System.out.println(e);
         }
-
-
+    }
+}
