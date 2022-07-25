@@ -1,18 +1,16 @@
-package dao;
+package Dao;
 
 
+import Models.Users;
 import models.Departments;
-import models.Users;
-import org.sql2o.Connection;
 import org.sql2o.Sql2o;
-import org.sql2o.Sql2oException;
 
-
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Sql2oUsersDao implements UsersDao {
+public class Sql2oUsersDao<Sql2oException extends Throwable> implements dao.UsersDao {
 
 
     private final Sql2o sql2o;
@@ -34,7 +32,6 @@ public class Sql2oUsersDao implements UsersDao {
                     .executeUpdate()
                     .getKey();
             user.setId(id);
-
 
 
 

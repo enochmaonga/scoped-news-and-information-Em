@@ -1,4 +1,4 @@
-package dao;
+package Dao;
 
 
 import models.Department_News;

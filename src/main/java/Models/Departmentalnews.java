@@ -1,4 +1,4 @@
-package models;
+package Models;
 
 
 public class Department_News extends News {
