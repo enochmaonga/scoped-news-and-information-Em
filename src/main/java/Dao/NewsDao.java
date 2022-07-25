@@ -4,7 +4,6 @@ package dao;
 import models.Department_News;
 import models.News;
 
-
 import java.util.List;
 
 
@@ -31,4 +30,3 @@ public interface NewsDao {
 
     void clearAll();
 }
-

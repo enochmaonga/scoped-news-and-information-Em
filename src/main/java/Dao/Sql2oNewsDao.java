@@ -3,11 +3,10 @@ package dao;
 
 import models.Department_News;
 import models.News;
-import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
-
+import java.sql.Connection;
 import java.util.List;
 
 
