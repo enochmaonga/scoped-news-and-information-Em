@@ -1,23 +1,16 @@
 import com.google.gson.Gson;
-import dao.Sql2oDepartmentsDao;
 import dao.Sql2oNewsDao;
 import dao.Sql2oUsersDao;
 import exceptions.ApiException;
-
-
 import models.Departments;
 import models.News;
 import models.Users;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
-
-
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 
 import static spark.Spark.*;
 import static spark.Spark.staticFileLocation;
@@ -31,7 +24,8 @@ public class App {
         }
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
-    public static void main(String[] args) {
+
+    public static <Sql2oDepartmentsDao> void main(String[] args) {
 
 
         port(getHerokuAssignedPort());
