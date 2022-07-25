@@ -41,8 +41,8 @@ public class App {
         Connection conn;
         Gson gson = new Gson();
         staticFileLocation("/public");
-        //uncomment the line below to run locally
-        //String connectionString = "jdbc:postgresql://localhost:5432/organisational_news_portal";
+//        uncomment the line below to run locally
+//        String connectionString = "jdbc:postgresql://localhost:5432/organisational_news_portal";
         //uncomment the line below to run locally,change the following line of code to your credentials
         //Sql2o sql2o = new Sql2o(connectionString, "wangui", "33234159");
 
@@ -243,6 +243,9 @@ public class App {
 
 
 
+    }
+
+    private static void post(String s, String s1, Object o) {
     }
 }
 

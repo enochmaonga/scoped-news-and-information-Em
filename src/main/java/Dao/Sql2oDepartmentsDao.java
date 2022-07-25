@@ -1,13 +1,13 @@
-package dao;
+package Dao;
 
 
+import Dao.Connection;
 import models.Departments;
 import models.News;
 import models.Users;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
-import org.sql2o.Sql2oException;
-
+import org.Sql2o.Sql2oException;
 
 import java.util.ArrayList;
 import java.util.List;
