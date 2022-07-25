@@ -15,6 +15,10 @@ public class Sql2oDepartmentsDao implements Sql2oDepartmentsDao.DepartmentsDao {
         this.sql2o = sql2o;
     }
 
+    public Sql2oDepartmentsDao() {
+        super();
+    }
+
 
     @Override
     public void add(Departments department) {
